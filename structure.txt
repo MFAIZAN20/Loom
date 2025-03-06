@@ -1,0 +1,30 @@
+Loom (WebProject) - Suggested Repository Structure
+
+/
+├─ ajax/                      # JSON/AJAX endpoints (comments, votes, notifications)
+├─ css/                       # Stylesheets
+├─ includes/                  # Shared PHP (db_connect, auth, helpers, templates)
+├─ js/                        # Client-side scripts (comments, voting, notifications, AI)
+├─ uploads/                   # User uploads (gitignored)
+│  └─ profile_pictures/
+├─ database/
+│  ├─ schema.sql              # Database schema (no user data)
+│  └─ seed.sql                # Optional safe seed data (categories)
+├─ index.php                  # Post feed / homepage
+├─ post.php                   # Post details + comments
+├─ create-post.php            # Create post + AI content analyzer
+├─ edit-post.php              # Edit existing post
+├─ profile.php                # Profile page
+├─ edit-profile.php           # Profile editor
+├─ notifications.php          # Notifications page
+├─ notification_settings.php  # Notification preferences
+├─ leaderboard.php            # Karma leaderboard + badges
+├─ admin.php                  # Admin dashboard (moderation)
+├─ login.php                  # Login
+├─ signup.php                 # Registration
+├─ logout.php                 # Logout
+├─ report.php                 # Report endpoint
+├─ README.md
+├─ WEEKLY_LOG.md
+└─ LICENSE
+

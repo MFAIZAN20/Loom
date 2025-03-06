@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs / runtime artifacts
+logs/
+*.log
+
+# Dependencies
+vendor/
+node_modules/
+
+# Environment / local overrides
+.env
+.env.*
+*.local.php
+
+# User uploads (generated content)
+uploads/
+
+# Local DB dumps (keep curated schema/seed)
+*.sql
+!database/schema.sql
+!database/seed.sql
+
