@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .post-card {
+        flex-direction: column;
+    }
+    
+    .vote-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px 0;
+    }
+    
+    .vote-count {
+        margin: 0 10px;
+    }
+    
+    .form-container {
+        padding: 15px;
+        margin: 0 10px;
+    }
+    
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .post-meta {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-footer {
+        flex-wrap: wrap;
+    }
+    
+    .post-action {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+}
