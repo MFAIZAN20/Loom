@@ -1,0 +1,350 @@
+/* Leaderboard Styling */
+
+.leaderboard-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Header Section */
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.leaderboard-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.period-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.period-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.period-filter {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    background-color: var(--bg-light);
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.period-filter:hover {
+    background-color: var(--bg-hover);
+    color: var(--text-color);
+}
+
+.period-filter.active {
+    background-color: var(--primary-color);
+    color: #000000; /* Changed from white to black */
+    font-weight: 700;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(76, 139, 245, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* User's Current Rank Card */
+.user-rank-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-rank-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.user-rank-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding-right: 1rem;
+}
+
+.rank-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.user-rank-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+.user-details {
+    flex: 1;
+}
+
+.username-badge {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+.karma-progress {
+    width: 100%;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Badge Information Section */
+.leaderboard-badges-info {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.leaderboard-badges-info h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.badge-karma {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Leaderboard Table */
+.leaderboard-table-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.leaderboard-table th {
+    background-color: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.leaderboard-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: var(--bg-hover);
+}
+
+.top-rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.top-rank i {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.rank-1 i {
+    color: #ffd700; /* Gold */
+}
+
+.rank-2 i {
+    color: #c0c0c0; /* Silver */
+}
+
+.rank-3 i {
+    color: #cd7f32; /* Bronze */
+}
+
+.user-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.current-user {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+.no-results {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .leaderboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .user-rank-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .user-rank-position {
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    
+    .user-rank-info {
+        flex-direction: column;
+    }
+    
+    .user-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .username-badge {
+        justify-content: center;
+    }
+    
+    .comments-col,
+    .posts-col {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .badge {
+        padding: 0.1rem 0.4rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Dark Mode Support */
+body.dark-mode .leaderboard-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .period-filter {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .period-filter:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .current-user {
+    background-color: rgba(var(--primary-color-rgb), 0.2);
+}
