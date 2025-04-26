@@ -1,0 +1,132 @@
+/* Admin Panel Specific Styles */
+
+.admin-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 15px;
+}
+
+.admin-container h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.admin-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    padding: 1.5rem;
+    overflow-x: auto; /* For table responsiveness */
+}
+
+/* Admin Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.admin-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+}
+
+.admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* Admin Action Buttons */
+.admin-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.admin-delete-btn:hover {
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+}
+
+.admin-current-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Admin Forms */
+.admin-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 6px var(--shadow-color);
+    border-radius: 8px;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="password"],
+.admin-form input[type="email"],
+.admin-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.admin-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive Styles for Admin */
+@media (max-width: 768px) {
+    .admin-table {
+        font-size: 0.9rem;
+    }
+    
+    .admin-table th,
+    .admin-table td {
+        padding: 8px;
+    }
+}
+
+/* Dark Mode Support */
+body.dark-mode .admin-table th {
+    background: var(--accent-color);
+}
+
+body.dark-mode .admin-delete-btn {
+    color: #ff6b6b;
+}
+
+body.dark-mode .admin-delete-btn:hover {
+    background-color: #ff6b6b;
+    color: #121212;
+}
