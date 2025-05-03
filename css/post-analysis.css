@@ -1,0 +1,124 @@
+/* Post Analysis Styles */
+.ai-loading {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 15px 0;
+    color: #666;
+}
+
+.ai-loading i {
+    color: #1890ff;
+}
+
+.analysis-loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    padding: 10px;
+}
+
+.analysis-loading i {
+    color: #1890ff;
+}
+
+.analysis-error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f5222d;
+    padding: 10px;
+}
+
+.content-analysis {
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #d9d9d9;
+}
+
+.content-analysis.positive {
+    border-left-color: #52c41a;
+    background-color: rgba(82, 196, 26, 0.05);
+}
+
+.content-analysis.negative {
+    border-left-color: #f5222d;
+    background-color: rgba(245, 34, 45, 0.05);
+}
+
+.analysis-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.analysis-header i {
+    font-size: 18px;
+    color: #1890ff;
+}
+
+.analysis-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.analysis-summary {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.analysis-karma {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.karma-value {
+    font-weight: 700;
+}
+
+.karma-value.positive {
+    color: #52c41a;
+}
+
+.karma-value.negative {
+    color: #f5222d;
+}
+
+.analysis-quality {
+    margin-top: 10px;
+}
+
+.quality-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.quality-meter {
+    height: 8px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quality-fill {
+    height: 100%;
+    background-color: #1890ff;
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+}
+
+.content-analysis.positive .quality-fill {
+    background-color: #52c41a;
+}
+
+.content-analysis.negative .quality-fill {
+    background-color: #f5222d;
+}
